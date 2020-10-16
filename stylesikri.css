@@ -1,0 +1,283 @@
+/* Import custom fonts */
+@import url(https://fonts.googleapis.com/css?family=Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+@import url(https://fonts.googleapis.com/css?family=Bitter:400,700);
+/* Reset Default Browser Styles */
+html, body, a, h1, h2, h3, h4, h5, h6, ul, li, span, section, footer, p, i, div{
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+	text-decoration: none;
+		list-style-type: none;
+		color: inherit;
+}
+html,
+body {
+  height: 100%;
+  	font-family: 'Open Sans', sans-serif;
+  /overflow: hidden;/
+}
+
+.Home
+{
+    width :100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    float: left;
+    margin : 20px;
+}
+.Corona
+{
+    width :100px;
+    padding: 8px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background: transparent;
+    color: #fff;
+    float: right;
+    margin : 20px;
+}
+.Ticket
+{
+    width :100px;
+    padding: 10px 0;
+    outline: none !important;
+    border: 2px solid #fff;
+    border-radius: 50px;
+    background-color: grey;
+    color: aliceblue;
+    color: #fff;
+    margin-left : 500px;
+    margin-bottom: 10px;
+}
+/*
+
+.Home :hover
+{ 
+       background-color: aliceblue;
+        text-decoration-color: black;
+       
+    }
+*/
+/* Site Canvas and Content */
+
+
+#site-canvas {
+  width: 100%;
+  height: 100%;
+   /overflow-y: scroll;/
+  position:relative;
+}
+
+
+.pageHeader {
+	  font-family: "Bitter","Lucida Grande","Lucida Sans Unicode","Lucida Sans",Geneva,Verdana,sans-serif;
+	padding-top: 65px;
+	text-align: center;
+	font-weight: 700;
+	font-style: italic;
+	height: 400px;
+	background: url(images/fate.jpg) top center;
+	margin-bottom: 20px;
+	color: white;
+}
+.pageHeader h1{
+	position: absolute;
+	top: 175px;
+	width: 100%;
+	text-align: center;
+	display: block;
+	vertical-align: center;
+ font-size: 5em;
+}
+
+.pageHeader img {
+	z-index: 5;
+	top: 55px;
+ -ms-interpolation-mode: bicubic; 
+ display: inline;
+
+}
+
+.leftImg {
+ padding-right: 250px;
+}
+.rightImg {
+   padding-left: 250px;
+}
+
+#page-content {
+	width: 80%;
+	margin: 0 auto;
+}
+p {
+	padding: 20px;
+}
+p + p {
+	padding-top: 0px;
+}
+
+#page-content h3 {
+	padding: 0 20px;
+	font-size: 1.25;
+}
+h2, h3, h4{
+	text-align: center;
+}
+
+#page-content h2 {
+	font-size: 2em;
+		font-family: 'Bitter', serif;
+}
+
+#page-content h3 {
+	font-size: 1.5em;
+		font-family: 'Bitter', serif;
+}
+#page-content h4 {
+	font-size: 1.25em;
+		font-family: 'Bitter', serif;
+		padding: 10px;
+		color: #8C99A4;
+}
+
+
+.warning {
+	color:#F4421A;
+}
+.points {
+	color: #6699FF;
+	padding: 0 20px;
+}
+
+
+
+
+/Media Queries for bigger screens/
+@media screen and (max-width: 949px) {
+#closeButton {
+	display: block;
+	line-height: 55px;
+	border-bottom: none;
+}
+
+html,
+body {
+  height: 100%;
+  overflow: hidden;
+}
+/Page Header Styles/
+	
+	.pageHeader h1{
+		font-size: 4em;
+		top: 210px;
+	}
+
+	.leftImg {
+		padding-right: 0px;
+		float: left;
+	}
+	
+	.rightImg {
+		padding-left: 0px;
+		float: right;
+	}	
+	
+} /Ending Media Query Bracket (max-width: 949px)/
+@media screen and (max-width: 787px) { 
+		#page-content {
+		width: 90%;
+	}
+	footer section {
+		width: 50%;
+	}
+}
+@media screen and (max-width: 600px) {
+		footer section {
+		width: 100%;
+	}
+
+}
+
+
+@media screen and (max-width: 500px) {
+	#page-content {
+		width: 100%;
+	}
+	
+	#page-content h2 {
+		font-size: 1.5em
+	}
+	
+	.pageHeader, .pageHeader img {
+		height: 250px;
+	}
+	
+	.pageHeader h1{
+		font-size: 3em;
+		top: 210px;
+	}
+	
+	td, table caption {
+		padding: 3px 10px;
+	}
+	
+	table {
+		margin: 10px 5%;
+	}
+	
+	footer section {
+		width: 100%;
+		min-width: 100%;
+	}
+
+} /*Ending Media Query Bracket (max-width: 500px) */
+@media screen and (max-width: 400px) {
+	#menuHeader img {
+		left: 30%;
+		left: calc(50% - 55px);
+		height: 30px;
+		top: 15px;
+		position: absolute;
+	}
+	.pageHeader, .pageHeader img {
+		height: 150px;
+	}
+	
+	.pageHeader h1{
+		font-size: 1.8em;
+		top: 150px;
+	}
+	
+	footer h2 {
+		font-size: 1.25em;
+	}
+	
+} /*Ending Media Query Bracket (max-width: 400px) */
+
+
+@media screen and (max-width: 300px) {
+	#drawer {
+		width: 100%;
+	}
+	
+	#drawer h3 {
+		font-size: 1.5em;
+	}
+	#menuHeader img {
+		left: 40%;
+		left: calc(100% - 110px);
+		height: 30px;
+		top: 15px;
+		position: absolute;
+	}
+	
+} /*Ending Media Query Bracket (max-width: 300px) */

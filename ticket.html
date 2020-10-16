@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title> Checkout Form</title>
+  <link rel="stylesheet" href="./styleticket.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="container">
+		<h1>Checkout Form</h1>
+		<form class="form cf">
+            
+            <section class="plan cf">
+				<h2>Choose a plan</h2>
+				<input type="radio" name="radio1" id="free" value="free"><label class="free-label four col" for="free">Foreign tourist</label>
+				<input type="radio" name="radio1" id="basic" value="basic" checked><label class="basic-label four col" for="basic">Indian tourist</label>
+				<input type="radio" name="radio1" id="premium" value="premium"><label class="premium-label four col" for="premium">Student</label>
+            </section>
+            <section class="payment-type cf">
+				<h2>Select a payment type:</h2>
+				<input type="radio" name="radio3" id="credit" value="credit"><label class="credit-label four col" for="credit">Credit Card</label>
+				<input type="radio" name="radio3" id="debit" value="debit"><label class="debit-label four col" for="debit">Debit Card</label>
+				<input type="radio" name="radio3" id="paypal" value="paypal" checked><label class="paypal-label four col" for="paypal">UPI</label>
+            </section>
+            
+			<section class="payment-plan cf">
+				<h2>Select a payment plan:</h2>
+				<input type="radio" name="radio2" id="monthly" value="monthly" checked><label class="monthly-label four col" for="monthly">6am-8am</label>
+                <input type="radio" name="radio2" id="a" value="a"><label class="a-label four col" for="a">8am-10am</label>
+				<input type="radio" name="radio2" id="b" value="b"><label class="b-label four col" for="b">10am-12pm</label>
+				<input type="radio" name="radio2" id="c" value="c"><label class="c-label four col" for="c">12pm-2pm</label>
+				<input type="radio" name="radio2" id="d" value="d"><label class="d-label four col" for="d">2pm-4pm</label>
+				<input type="radio" name="radio2" id="yearly" value="yearly"><label class="yearly-label four col" for="yearly">4pm-6pm</label>
+			</section>
+			<section>
+                <h2>Select a date:</h2>
+                <form action="/action_page.php">
+                    <input type="date" id="birthday" name="birthday">
+                  </form>
+                  
+			</section>
+    		<section>
+                <h2>Details</h2>
+                <form>
+                    <label for="fname">Number of tickets</label>
+                    <input type="text" id="fname" name="fname">
+                  </form>
+                
+                  
+                  
+			</section>
+                
+            <section>
+                <h2><button><a href="receipt.html">SUBMIT</a></button></h2>
+            </section> 
+
+		</form>
+	</div>
+<!-- partial -->
+  
+</body>
+</html>
